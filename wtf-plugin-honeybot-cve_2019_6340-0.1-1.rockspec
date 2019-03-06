@@ -1,21 +1,20 @@
-package = "wtf-plugin-honeybot-troll_die"
-version = "0.3-1"
+package = "wtf-plugin-honeybot-cve_2019_6340"
+version = "0.1-1"
 source = {
-   url = "git+https://github.com/honeybot/wtf-plugin-honeybot-troll_die",
-   tag = "0.3"
+   url = "git+https://github.com/honeybot/wtf-plugin-honeybot-cve_2019_6340",
+   tag = "0.1"
 }
 description = {
-   homepage = "https://github.com/honeybot/wtf-plugin-honeybot-troll_die",
+   homepage = "https://github.com/honeybot/wtf-plugin-honeybot-cve_2019_6340",
    license = "MIT"
 }
 dependencies = {
-   "wtf-action-simple_response >= 0.1",
+   "wtf-action-json_response >= 0.1",
    "wtf-honeybot-core >= 0.1",
-   "lua-resty-nettle >= 0.105"
 }
 build = {
    type = "builtin",
    modules = {
-      ["wtf.plugins.honeybot.troll_die.handler"] = "wtf/plugins/honeybot/troll_die/handler.lua"
+      ["wtf.plugins.honeybot.cve_2019_6340.handler"] = "wtf/plugins/honeybot/cve_2019_6340/handler.lua"
    }
 }

@@ -1,4 +1,4 @@
-# wtf-plugin-honeybot-troll-die
+# wtf-plugin-honeybot-cve_2019_6340
 ```json
 {
   "name": "demo",
@@ -6,12 +6,13 @@
   "storages": {},
   "plugins": {
     "honeybot": [],
-    "honeybot.troll_die" : [ {"action": "simple_response"} ]
+    "honeybot.cve_2019_6340" : [ {"action": "json_response_422"} ]
   },
   "actions": { 
-    "simple_response" : [
+    "json_response" : [
       {
-        "code": 200
+        "name": "json_response_422",
+        "code": 422
       }
     ]
   },
